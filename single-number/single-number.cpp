@@ -1,16 +1,13 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
-        int i=0;
-        while(i<nums.size()-1)
+        int y;
+        for(int i=0;i<nums.size();i++)
         {
-            if(nums[i]!=nums[i+1])
-                return nums[i];
-            else
-                i+=2;
+            if(count(nums.begin(),nums.end(),nums[i])==1)
+                y=nums[i];
         }
-        return nums[nums.size()-1];
+        return y;
         
     }
 };
