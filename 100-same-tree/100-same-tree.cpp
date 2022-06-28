@@ -18,12 +18,12 @@ public:
         else if(p==NULL || q==NULL)
             return false;
 			//inorder traversal cheak
-        int a=isSameTree(p->left,q->left);
+        bool a=isSameTree(p->left,q->left);
 		
         if(p->val!=q->val)
             return false;
 			
-       int b= isSameTree(p->right,q->right);
+       bool b= isSameTree(p->right,q->right);
 	   
         return a&&b;
     }
