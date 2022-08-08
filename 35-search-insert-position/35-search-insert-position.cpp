@@ -6,7 +6,7 @@ int ans=0;
         if(target>nums[size-1]){
             return nums.size();
         }
-        for(int i=0;i<nums.size();i++){
+        int i=0;
             while(target>nums[i])
             {
                 
@@ -17,8 +17,6 @@ int ans=0;
                 ans=i+1;
                 i++;
             }
-            
-        }
         return ans;
     }
 };
