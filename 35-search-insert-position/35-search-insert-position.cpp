@@ -14,9 +14,8 @@ int ans=0;
                 {
                     return i;
                 }
-                ans=i+1;
                 i++;
             }
-        return ans;
+        return i;
     }
 };
