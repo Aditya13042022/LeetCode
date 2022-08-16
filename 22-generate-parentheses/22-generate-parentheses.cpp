@@ -1,15 +1,14 @@
 class Solution {
 public:
 void solve(vector<string> &ans, string output, int open, int closed){
-    //base case
     if( open == 0 && closed ==0 ){ 
-        ans.push_back(output);  // insert the parenthesis in ans;
+        ans.push_back(output); 
         return;
     }
     
-    if( open != 0 ){  // we will insert the '(' everytime till no. of open parenthesis is 0
+    if( open != 0 ){ 
         string op1 = output;  
-        op1.push_back('(');   // insert into output
+        op1.push_back('(');
         solve(ans,op1,open-1,closed); 
         
     }
