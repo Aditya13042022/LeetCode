@@ -8,8 +8,8 @@ public:
             {
                 if(nums[i]+nums[j]==target)
                 {
-                    res.push_back(i);
                     res.push_back(j);
+                    res.push_back(i);
                 }
             }
         }
