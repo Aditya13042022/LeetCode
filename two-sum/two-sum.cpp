@@ -7,12 +7,9 @@ public:
            int curr = target - nums[i];
            if(m.count(curr)){
                res.push_back(m[curr]);
-               res.push_back(i);
-               // cout<<curr<<" "<<m[nums[i]]<<" "<<endl;
-           }
+               res.push_back(i);           }
            else{
                m[nums[i]] = i;
-               cout<<nums[i]<<" "<<m[nums[i]]<<" ";
            }
        }
         return res;
